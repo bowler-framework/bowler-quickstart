@@ -2,7 +2,7 @@ import sbt._
 
 
 class BowlerExamplesProject(info: ProjectInfo) extends DefaultWebProject(info){
-  val bowler = "org.bowlerframework" % "bowler-core_2.8.1" % "0.2.1"
+  val bowler = "org.bowlerframework" % "core_2.8.1" % "0.3"
 	
   val slf4jVersion = "1.6.0"
 	
