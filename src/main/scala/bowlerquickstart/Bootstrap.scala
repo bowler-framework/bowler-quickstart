@@ -1,19 +1,17 @@
 package bowlerquickstart
 
 import org.bowlerframework.view.scalate._
-import org.bowlerframework.view.scalate.selectors._
+import org.bowlerframework.Request
 
 /**
  * This class acts as the starting point and bootstrap point for our application
  */
 class Bootstrap{
   // parent layout
-  val parentLayout = Layout("default")
+  val parentLayout = DefaultLayout("default", "doLayout", None, None)
 
-
-  //You can define which layout to use based on chaining LayoutSelectors, for instance based on URL,
-  // User-Agent or other factors.
-  TemplateRegistry.appendLayoutSelectors(List(new DefaultLayoutSelector(parentLayout)))
+  def resolver(request: Request): Option[DefaultLayout] = Option(parentLayout)
+  TemplateRegistry.defaultLayout = resolver(_)
 
 
   // I think we're ready to start and instantiate our Controller.
