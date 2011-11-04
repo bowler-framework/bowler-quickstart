@@ -12,7 +12,7 @@ resolvers ++= Seq("Sonatype Nexus releases" at "https://oss.sonatype.org/content
 	"Sonatype Nexus snapshots" at "https://oss.sonatype.org/content/repositories/snapshots", "Scala-Tools repo" at "http://scala-tools.org/repo-releases/")
 
 libraryDependencies ++= Seq(
-	"org.bowlerframework" %% "core" % "0.4.2",
+	"org.bowlerframework" %% "core" % "0.5.1",
 	"org.slf4j" % "slf4j-nop" % "1.6.0" % "runtime",
 	"javax.servlet" % "servlet-api" % "2.5" % "provided",
 	"org.eclipse.jetty" % "jetty-webapp" % "7.4.1.v20110513" % "jetty",
