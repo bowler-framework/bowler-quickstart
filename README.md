@@ -6,5 +6,4 @@ The Bowler Quickstart is a Skeleton sbt project and Bowler app that gets you up 
 * Create the directory where you want to start your app and run "git init"
 * Do  "git pull https://github.com/wfaler/bowler-quickstart.git"
 * Run sbt
-* Run "update" inside of sbt
 * Done! Ready to start writing your Bowler app!
