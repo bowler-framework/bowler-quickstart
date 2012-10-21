@@ -9,9 +9,8 @@ scalaVersion := "2.9.1"
 seq(webSettings :_*)
 
 resolvers ++= Seq(
-  "Sonatype Nexus releases" at "https://oss.sonatype.org/content/repositories/releases",
-  "Sonatype Nexus snapshots" at "https://oss.sonatype.org/content/repositories/snapshots", 
-  "Scala-Tools repo" at "http://scala-tools.org/repo-releases/"
+  "Sonatype Nexus releases" at "http://oss.sonatype.org/content/repositories/releases",
+  "Sonatype Nexus snapshots" at "http://oss.sonatype.org/content/repositories/snapshots"
 )
 
 libraryDependencies ++= Seq(
